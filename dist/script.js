@@ -27,7 +27,7 @@ const toggleButton = () => {
 const play = () => {
   if (!isPlay && !isReset) {
     playButton.innerHTML = "Pause";
-    bg.classList.add("animate-bg");
+    bg.classList.add("animate-spin");
     min = setInterval(() => {
       minute.innerHTML = `${++minCounter} : `;
     }, 60 * 1000);
@@ -52,7 +52,7 @@ const play = () => {
     clearInterval(centiSec);
     isPlay = false;
     isReset = false;
-    bg.classList.remove("animate-bg");
+    bg.classList.remove("animate-spin");
   }
   toggleButton();
 };

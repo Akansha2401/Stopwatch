@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopwatch</title>
+    <!-- <link rel="stylesheet" href="custom.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,23 +12,28 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,200;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="custom.css">
   </head>
   <body
     class="bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 font-poppins text-xl flex justify-center items-center mt-24"
   >
     <div class="container flex items-center justify-center">
       <div class="watch">
-        <div
-          class="outer-circle w-60 h-60 rounded-full  bg-slate-50 flex justify-center items-center animate-bg"
-        >
+        <div class="">
           <div
-            class="inner-circle w-56 h-56 rounded-full bg-slate-50 flex justify-center items-center bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800"
+            class="w-60 h-60 rounded-full flex justify-center items-center relative"
           >
-            <div class="text-white">
-              <span class="minute text-5xl">0 :</span>
-              <span class="sec text-4xl">&nbsp;0 :</span>
-              <span class="msec text-3xl">&nbsp;0</span>
+            <div
+              class="inner-circle w-56 h-56 rounded-full flex justify-center items-center bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 absolute"
+            >
+              <div class="text-white">
+                <span class="minute text-5xl">0 :</span>
+                <span class="sec text-4xl">&nbsp;0 :</span>
+                <span class="msec text-3xl">&nbsp;0</span>
+              </div>
+              <!-- border-8 border-t-[#ee7752] rounded-full -->
+              <div
+                class="absolute rounded-full inset-0 border-8 border-r-[#e73c7e] border-t-[#ee7752] border-b-[#23a6d5] border-l-[#23d5ab] outer-circle"
+              ></div>
             </div>
           </div>
         </div>
