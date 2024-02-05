@@ -8,26 +8,22 @@
   }
 }
 
-
-
 @layer utilities {
-    .lap-item{
-        display: inline-block;
-        width: 100%;
-        padding: 8px;
-        border: 1px solid black;
-        margin-bottom: 1rem;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .number{
-        color: white;
-        padding-left: 12px;
-    }
-    .time-stamp{
-        display:inline-block;
-        margin-left: 24px;
-    }
+  .lap-item {
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .number {
+    color: white;
+    padding: 0px 12px;
+  }
+  .time-stamp {
+    display: inline-block;
+    padding: 0px 15px;
+  }
 }
-
-
